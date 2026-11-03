@@ -3,119 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بلدية العقلة - ولاية تبسة</title>
+<title>من إعداد المترشح الطاهر خضار - الوظائف الممنوعة</title>
+<meta property="og:title" content="من إعداد المترشح الطاهر خضار - بطاقة فنية غير رسمية">
+<meta property="og:description" content="الوظائف الممنوع عليها ممارسة السياسة - بلدية العقلة ولاية تبسة - للتوعية فقط">
 <style>
-*{box-sizing:border-box} body{margin:0;font-family:Tajawal,system-ui;background:#eef2f7}
-.top{display:flex;align-items:center;justify-content:space-between;background:white;padding:12px 14px}
-.btn-dl{background:linear-gradient(135deg,#6d28d9,#4c1d95);color:white;padding:12px 20px;border-radius:28px;text-decoration:none;font-weight:bold;font-size:15px}
-.name-box{text-align:right;line-height:1.5} .name-box .green{color:#006233;font-weight:900;font-size:17px} .name-box .big{color:#000;font-weight:900;font-size:22px} .name-box .small{color:#555;font-size:13px}
-.avatar{width:82px;height:82px;border-radius:50%;border:3px solid #006233;object-fit:cover}
-.blue{background:#2563eb;color:white;text-align:center;padding:28px 16px 22px;border-radius:0 0 28px 28px}
-.blue h1{margin:0;font-size:27px;font-weight:900} .blue p{margin:10px 0;font-size:18px}
-.flag{display:flex;height:10px}.flag div{flex:1}.g{background:#006233}.w{background:#fff}.r{background:#c00}
-.card{background:white;margin:14px 12px;padding:22px 14px;border-radius:20px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.07);border-top:5px solid #d21034;cursor:pointer;transition:.2s}
-.card:active{transform:scale(.97)} .card h2{font-size:20px;margin:14px 0 6px;font-weight:900} .card p{font-size:15px;color:#444;margin:0}
-.card .tag{display:inline-block;margin-top:12px;background:#d21034;color:white;padding:6px 18px;border-radius:20px;font-size:13px;font-weight:bold}
-.card.green{border-top-color:#006233}.card.green .tag{background:#006233}
-.card.blue2{border-top-color:#2563eb}.card.orange{border-top-color:#ea580c}.card.purple{border-top-color:#6d28d9}
-.footer{background:#0f3d2e;color:white;text-align:center;padding:20px 14px;margin-top:20px;line-height:1.8;font-size:14px}
-
-/* النافذة المنبثقة */
-.modal{display:none;position:fixed;z-index:999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(3px)}
-.modal-content{background:white;margin:15% auto;padding:24px;border-radius:20px;width:90%;max-width:420px;text-align:right;position:relative;animation:pop .3s}
-@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
-.close{position:absolute;left:16px;top:12px;font-size:28px;color:#999;cursor:pointer}
-.modal h3{margin:0 0 12px;font-size:20px;color:#1e40af}
-.modal p{font-size:15px;line-height:1.8;color:#333}
-.modal ul{padding-right:18px;line-height:1.8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Cairo,Tahoma;background:#f0f4ff;color:#222;line-height:1.8}
+.top-bar{background:#fff;padding:12px 15px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #e0e0e0}
+.avatar{width:65px;height:65px;border-radius:50%;border:3px solid #0a5c36;object-fit:cover}
+.top-text{flex:1}
+.top-text h3{color:#0a5c36;font-size:15px;margin:0}
+.top-text p{font-size:12px;color:#555;margin:2px 0;line-height:1.4}
+.download-btn{background:linear-gradient(135deg,#7b1fa2,#512da8);color:#fff;padding:8px 18px;border-radius:20px;font-size:13px;text-decoration:none}
+.header-blue{background:#1565c0;color:#fff;padding:28px 15px;text-align:center;border-radius:0 0 22px 22px}
+.header-blue h1{font-size:22px;margin-bottom:6px}
+.header-blue h2{font-size:18px;font-weight:normal;opacity:.95}
+.flag{height:5px;background:linear-gradient(90deg,#007A3D 33%,#fff 33% 66%,#ff0000 66%)}
+.container{max-width:1100px;margin:auto;padding:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px}
+.box{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.07);border-top:5px solid #0a5c36;padding:18px;text-align:center;text-decoration:none;color:#222;display:block;transition:.2s}
+.box:hover{transform:translateY(-3px)}
+.box.red{border-top-color:#c62828}.box.orange{border-top-color:#ef6c00}.box.purple{border-top-color:#6a1b9a}
+.icon{font-size:38px}.badge{background:#0a5c36;color:#fff;padding:3px 10px;border-radius:10px;font-size:10px}.badge-red{background:#c62828}
+.footer{background:#0a3d2e;color:#fff;text-align:center;padding:18px;margin-top:20px;font-size:13px}
 </style>
 </head>
 <body>
 
-<div class="top">
-  <a href="#" class="btn-dl">📥 حمّل</a>
-  <div class="name-box">
-    <div class="green">من إعداد المترشح: الطاهر</div>
-    <div class="big">خضار</div>
-    <div class="small">بطاقة فنية غير رسمية حول بلدية<br>العقلة - ولاية تبسة<br>لأغراض التوعية والتعريف فقط</div>
-  </div>
-  <img src="tahar.jpg" class="avatar">
+<div class="top-bar">
+<img class="avatar" src="tahar.jpg" alt="الطاهر خضار" onerror="this.src='https://via.placeholder.com/65x65/0a5c36/ffffff?text=ط'">
+<div class="top-text">
+<h3>من إعداد المترشح: الطاهر خضار</h3>
+<p>بطاقة فنية غير رسمية حول بلدية العقلة - ولاية تبسة</p>
+<p><strong>لأغراض التوعية والتعريف فقط</strong></p>
+</div>
+<a class="download-btn" href="anawin-arabia.html">حمّل 📥</a>
 </div>
 
-<div class="blue">
-  <h1>بلدية العقلة - ولاية تبسة</h1>
-  <p>دليل الهيكل التنظيمي</p>
-  <p>الوظائف الممنوعة من ممارسة السياسة</p>
-  <p style="font-size:16px;margin-top:14px;opacity:.9">150 مصلحة وملف - اضغط للدخول</p>
-</div>
-<div class="flag"><div class="g"></div><div class="w"></div><div class="r"></div></div>
-
-<div class="card" onclick="openModal('m1')">
-  <div style="font-size:52px">🧹</div>
-  <h2>الأعوان الشبيهون (الشيهين)</h2>
-  <p>في الكوميساريات - ممنوعون من الترشح والحملة</p>
-  <span class="tag">ملف منفصل</span>
+<div class="header-blue">
+<h1>بلدية العقلة - ولاية تبسة</h1>
+<h2>دليل الهيكل التنظيمي<br>الوظائف الممنوعة من ممارسة السياسة</h2>
+<p style="margin-top:10px;font-size:14px;opacity:.9">150 مصلحة وملف - اضغط للدخول</p>
 </div>
 
-<div class="card" onclick="openModal('m2')">
-  <div style="font-size:52px">📢</div>
-  <h2>ممنوع القيام بحملة انتخابية</h2>
-  <p>المادة 39 و 198 - حتى توزيع المناشير ممنوع</p>
-  <span class="tag">هام جدا</span>
+<div class="flag"></div>
+
+<div class="container">
+<div class="grid">
+
+<a class="box red" href="aawan-shabihoun.html">
+<div class="icon">🧹</div><h3>الأعوان الشبيهون (الشيهين)</h3><p>في الكوميساريات - ممنوعون من الترشح والحملة</p><span class="badge badge-red">ملف منفصل</span>
+</a>
+
+<a class="box red" href="hamla-intikhabia.html">
+<div class="icon">📢</div><h3>ممنوع القيام بحملة انتخابية</h3><p>المادة 39 و 198 - حتى توزيع المناشير ممنوع</p><span class="badge badge-red">هام جدا</span>
+</a>
+
+<a class="box" href="shorta.html">
+<div class="icon">👮</div><h3>الأمن الوطني والدرك</h3><p>الشرطة - الدرك - الحماية المدنية</p><span class="badge">ملف منفصل</span>
+</a>
+
+<a class="box orange" href="jaych.html">
+<div class="icon">🎖️</div><h3>الجيش الوطني الشعبي</h3><p>منع 5 سنوات احتياط إجباري</p><span class="badge badge-red">5 سنوات</span>
+</a>
+
+<a class="box purple" href="qoudat.html">
+<div class="icon">👨‍⚖️</div><h3>القضاة والمحكمة الدستورية</h3><p>واجب التحفظ المطلق</p>
+</a>
+
+<a class="box" href="woulat.html">
+<div class="icon">🏛️</div><h3>الولاة ورؤساء الدوائر</h3><p>أمين الخزينة - المراقب المالي - الأمين العام</p>
+</a>
+
+<a class="box" href="anawin-arabia.html" style="grid-column:1/-1;border-top-color:#1565c0;background:#e3f2fd">
+<div class="icon">📑</div><h3>فهرس العناوين الرسمية بالعربية كما وردت في القانون</h3><p>الجدول الرسمي + المراجع القانونية لكل وظيفة</p>
+</a>
+
+</div>
 </div>
 
-<div class="card green" onclick="openModal('m3')">
-  <div style="font-size:52px">👮</div>
-  <h2>الأمن الوطني والدرك</h2>
-  <p>الشرطة - الدرك - الحماية المدنية</p>
-  <span class="tag">ملف منفصل</span>
+<div class="footer">
+<p>من إعداد المترشح: الطاهر خضار<br>بطاقة فنية غير رسمية حول بلدية العقلة - ولاية تبسة<br>لأغراض التوعية والتعريف فقط - 2026</p>
+<p style="font-size:11px;margin-top:8px;opacity:.8">المصدر: القانون العضوي 26-05 المؤرخ 4 أفريل 2026 - الجريدة الرسمية</p>
 </div>
 
-<div class="card orange" onclick="openModal('m4')">
-  <div style="font-size:52px">⭐</div>
-  <h2>الجيش الوطني الشعبي</h2>
-  <p>منع 5 سنوات احتياط إجباري</p>
-  <span class="tag">5 سنوات</span>
-</div>
-
-<div class="card purple" onclick="openModal('m5')">
-  <div style="font-size:52px">👨‍⚖️</div>
-  <h2>القضاة والمحكمة الدستورية</h2>
-  <p>واجب التحفظ المطلق</p>
-</div>
-
-<div class="card green" onclick="openModal('m6')">
-  <div style="font-size:52px">🏛️</div>
-  <h2>الولاة ورؤساء الدوائر</h2>
-  <p>أمين الخزينة - المراقب المالي - الأمين العام</p>
-</div>
-
-<div class="card blue2" style="background:#e6f0ff" onclick="openModal('m7')">
-  <div style="font-size:52px">📑</div>
-  <h2>فهرس العناوين الرسمية بالعربية كما وردت في القانون</h2>
-  <p>الجدول الرسمي + المراجع القانونية لكل وظيفة</p>
-</div>
-
-<div class="footer">من إعداد المترشح: الطاهر خضار<br>بطاقة فنية غير رسمية حول بلدية العقلة - ولاية تبسة<br>لأغراض التوعية والتعريف فقط - 2026</div>
-
-<!-- النوافذ المنبثقة -->
-<div id="m1" class="modal" onclick="closeModal('m1')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m1')">&times;</span><h3>🧹 الأعوان الشبيهون</h3><p>الأعوان الشبيهون (أعوان الشبه) في البلديات والكوميساريات ممنوعون من الترشح لنفس البلدية التي يعملون بها.</p><ul><li>ممنوع الترشح للمجلس الشعبي البلدي</li><li>ممنوع القيام بالحملة الانتخابية</li><li>يجب تقديم استقالة قبل الترشح - القانون العضوي 21-01</li></ul></div></div>
-
-<div id="m2" class="modal" onclick="closeModal('m2')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m2')">&times;</span><h3>📢 ممنوع القيام بحملة</h3><p><strong>المادة 39 و 198</strong> من القانون العضوي للانتخابات: حتى توزيع المناشير والملصقات ممنوع على الموظفين الممنوعين، ويعاقب المخالف.</p></div></div>
-
-<div id="m3" class="modal" onclick="closeModal('m3')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m3')">&times;</span><h3>👮 الأمن الوطني والدرك</h3><p>جميع أسلاك: الشرطة - الدرك الوطني - الحماية المدنية ممنوعون من الترشح إلا بعد سنة من الاستقالة النهائية.</p></div></div>
-
-<div id="m4" class="modal" onclick="closeModal('m4')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m4')">&times;</span><h3>⭐ الجيش الوطني الشعبي</h3><p>أفراد الجيش العاملون والاحتياط ممنوعون من الترشح لمدة <strong>5 سنوات</strong> بعد الشطب من صفوف الجيش.</p></div></div>
-
-<div id="m5" class="modal" onclick="closeModal('m5')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m5')">&times;</span><h3>👨‍⚖️ القضاة والمحكمة الدستورية</h3><p>القضاة وأعضاء المحكمة الدستورية ملزمون بواجب التحفظ المطلق، ممنوع عليهم تماما ممارسة أي نشاط سياسي أو ترشح.</p></div></div>
-
-<div id="m6" class="modal" onclick="closeModal('m6')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m6')">&times;</span><h3>🏛️ الولاة ورؤساء الدوائر</h3><p>الولاة، رؤساء الدوائر، الأمناء العامون للولاية والبلدية، أمناء الخزينة، المراقبون الماليون - ممنوعون من الترشح في نفس الولاية.</p></div></div>
-
-<div id="m7" class="modal" onclick="closeModal('m7')"><div class="modal-content" onclick="event.stopPropagation()"><span class="close" onclick="closeModal('m7')">&times;</span><h3>📑 الفهرس الرسمي</h3><p>الجدول الرسمي للوظائف الممنوعة كما وردت حرفيا في القانون العضوي 26-05 المؤرخ 4 أفريل 2026 - الجريدة الرسمية.</p><p><em>من إعداد: الطاهر خضار - بلدية العقلة</em></p></div></div>
-
-<script>
-function openModal(id){document.getElementById(id).style.display='block'}
-function closeModal(id){document.getElementById(id).style.display='none'}
-</script>
 </body>
-</html>
+</html>ض
