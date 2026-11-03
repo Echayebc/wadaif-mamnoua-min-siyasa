@@ -3,59 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الطاهر خضار - بلدية العقلة</title>
+<title>بلدية العقلة - الوظائف الممنوعة</title>
 <style>
-body{margin:0;font-family:Tajawal,Arial;background:#f1f5f9}
-.header{display:flex;align-items:center;justify-content:space-between;background:white;padding:14px 16px;border-bottom:3px solid #006233;gap:10px}
-.header-text{flex:1;text-align:right}
-.name-label{color:#006233;font-weight:bold;font-size:18px;margin:0}
-.name{color:#000;font-weight:900;font-size:24px;margin:2px 0}
-.sub{color:#666;font-size:13px;line-height:1.4;margin-top:4px}
-.avatar{width:78px;height:78px;border-radius:50%;border:3px solid #006233;object-fit:cover;flex-shrink:0}
-.download-btn{background:#5b21b6;color:white;padding:14px 20px;border-radius:22px;text-decoration:none;font-weight:bold;font-size:16px;flex-shrink:0}
-.blue-box{background:linear-gradient(135deg,#2563eb,#1e40af);color:white;text-align:center;padding:32px 16px;border-radius:0 0 28px 28px}
-.blue-box h1{margin:0 0 10px;font-size:26px}
-.blue-box p{margin:0;font-size:18px;opacity:.95}
-.flag-bar{height:8px;display:flex}
-.flag-bar div{flex:1} .green{background:#006233} .white{background:white} .red{background:#d21034}
-.card{background:white;margin:18px 14px;padding:22px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,0.08);text-align:center;border-top:4px solid #d21034}
-.card h2{margin:12px 0 6px;font-size:22px}
-.card p{color:#555;margin:0 0 14px;font-size:15px}
-.card a{background:#d21034;color:white;padding:8px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:bold}
+body{margin:0;font-family:system-ui,Tajawal;background:#eef2f7}
+.blue{ background:linear-gradient(180deg,#2b5cff,#1e40af); color:white; text-align:center; padding:34px 18px 28px; border-radius:0 0 28px 28px; }
+.blue h1{margin:0;font-size:28px;font-weight:900} .blue p{margin:12px 0 0;font-size:18px;opacity:.95}
+.flag{display:flex;height:10px} .flag div{flex:1} .g{background:#006233}.w{background:#fff}.r{background:#d21034}
+.card{background:white;margin:16px 14px;padding:24px 16px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,.07);text-align:center;border-top:5px solid #d21034}
+.card h2{margin:14px 0 8px;font-size:22px} .card small{color:#666;font-size:14px;display:block;line-height:1.6}
+.btn{background:#d21034;color:white;border:0;padding:10px 22px;border-radius:22px;font-weight:bold;font-size:15px;margin-top:14px;cursor:pointer}
+.details{display:none;text-align:right;background:#fff7f7;margin:12px 0 0;padding:14px;border-radius:12px;border:1px solid #ffd1d1;line-height:1.8;font-size:15px}
+.details ul{margin:8px 0;padding-right:18px}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <a href="بطاقة-فنية.pdf" class="download-btn">📥 حمّل</a>
-  <div class="header-text">
-    <p class="name-label">من إعداد المترشح:</p>
-    <p class="name">الطاهر خضار</p>
-    <div class="sub">بطاقة فنية غير رسمية<br>لأغراض التوعية والتعريف فقط</div>
-  </div>
-  <img src="tahar.jpg" class="avatar">
-</div>
-
-<div class="blue-box">
+<div class="blue">
   <h1>بلدية العقلة - ولاية تبسة</h1>
   <p>الوظائف الممنوعة من ممارسة السياسة</p>
 </div>
-
-<div class="flag-bar"><div class="red"></div><div class="white"></div><div class="green"></div></div>
+<div class="flag"><div class="g"></div><div class="w"></div><div class="r"></div></div>
 
 <div class="card">
-  <div style="font-size:48px">🧹</div>
+  <div style="font-size:54px">🧹</div>
   <h2>الأعوان الشبيهون (أعوان الشبه)</h2>
-  <p>في البلديات - ممنوعون من الترشح والحملة</p>
-  <a href="aawan-shabihoun.html">ملف منفصل</a>
+  <small>في البلديات - ممنوعون من الترشح والحملة</small>
+  <button class="btn" onclick="document.getElementById('d1').style.display=document.getElementById('d1').style.display==='block'?'none':'block'">ملف منفصل</button>
+  <div id="d1" class="details">
+    <strong>المادة القانونية:</strong> الأعوان الشبيهون التابعون للأسلاك الخاصة بالجماعات المحلية (النظافة، الحراسة، الصيانة) يعتبرون في حالة تناف مع العهدة الانتخابية.
+    <ul>
+      <li>ممنوع الترشح للمجلس الشعبي البلدي لنفس البلدية التي يعمل بها</li>
+      <li>ممنوع القيام بالحملة الانتخابية أثناء أوقات العمل</li>
+      <li>يجب تقديم استقالة أو طلب انتداب قبل الترشح حسب القانون العضوي للانتخابات</li>
+    </ul>
+    <em>المصدر: القانون العضوي 21-01 المتعلق بنظام الانتخابات</em>
+  </div>
 </div>
 
 <div class="card">
-  <div style="font-size:48px">📢</div>
+  <div style="font-size:54px">📢</div>
   <h2>باقي الفئات الممنوعة</h2>
-  <p>القضاة، الجيش، الأمن، الولاة...</p>
-  <a href="wadaif-okhra.html">عرض القائمة</a>
+  <small>القضاة، الجيش، الأمن، الولاة...</small>
+  <button class="btn" onclick="document.getElementById('d2').style.display=document.getElementById('d2').style.display==='block'?'none':'block'">عرض القائمة</button>
+  <div id="d2" class="details">
+    <ul>
+      <li>القضاة</li>
+      <li>أفراد الجيش الوطني الشعبي</li>
+      <li>موظفو الأمن الوطني والحماية المدنية</li>
+      <li>الولاة، رؤساء الدوائر، الأمناء العامون للولايات والبلديات</li>
+      <li>أئمة المساجد والأسلاك الدينية</li>
+    </ul>
+    نفس الأحكام: لا يمكنهم الترشح إلا بعد الاستقالة بـ سنة على الأقل.
+  </div>
 </div>
+
+<p style="text-align:center;color:#888;font-size:12px;padding:18px">من إعداد المترشح: الطاهر خضار - بطاقة فنية غير رسمية للتوعية فقط</p>
 
 </body>
 </html>
