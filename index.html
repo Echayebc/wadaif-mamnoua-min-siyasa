@@ -3,24 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بلدية العقلة - الوظائف الممنوعة من السياسة</title>
+<title>الطاهر خضار - بلدية العقلة</title>
 <style>
 body{margin:0;font-family:Tajawal,Arial;background:#f1f5f9}
-.header{display:flex;align-items:center;justify-content:space-between;background:white;padding:12px 16px;border-bottom:3px solid #006233}
-.header-text{color:#006233;font-weight:bold;font-size:18px;line-height:1.4}
-.header-text span{display:block;font-size:22px;color:#000}
-.avatar{width:75px;height:75px;border-radius:50%;border:3px solid #006233;object-fit:cover}
-.download-btn{background:#5b21b6;color:white;padding:10px 22px;border-radius:25px;text-decoration:none;font-weight:bold}
+.header{display:flex;align-items:center;justify-content:space-between;background:white;padding:14px 16px;border-bottom:3px solid #006233;gap:10px}
+.header-text{flex:1;text-align:right}
+.name-label{color:#006233;font-weight:bold;font-size:18px;margin:0}
+.name{color:#000;font-weight:900;font-size:24px;margin:2px 0}
+.sub{color:#666;font-size:13px;line-height:1.4;margin-top:4px}
+.avatar{width:78px;height:78px;border-radius:50%;border:3px solid #006233;object-fit:cover;flex-shrink:0}
+.download-btn{background:#5b21b6;color:white;padding:14px 20px;border-radius:22px;text-decoration:none;font-weight:bold;font-size:16px;flex-shrink:0}
 .blue-box{background:linear-gradient(135deg,#2563eb,#1e40af);color:white;text-align:center;padding:32px 16px;border-radius:0 0 28px 28px}
 .blue-box h1{margin:0 0 10px;font-size:26px}
-.blue-box p{margin:0;font-size:19px}
+.blue-box p{margin:0;font-size:18px;opacity:.95}
 .flag-bar{height:8px;display:flex}
 .flag-bar div{flex:1} .green{background:#006233} .white{background:white} .red{background:#d21034}
-.card{background:white;margin:18px 14px;padding:20px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,0.08);text-align:center;border-top:4px solid #d21034}
-.card .icon{font-size:42px}
+.card{background:white;margin:18px 14px;padding:22px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,0.08);text-align:center;border-top:4px solid #d21034}
 .card h2{margin:12px 0 6px;font-size:22px}
-.card p{color:#444;margin:0 0 12px}
-.card a{background:#d21034;color:white;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:14px}
+.card p{color:#555;margin:0 0 14px;font-size:15px}
+.card a{background:#d21034;color:white;padding:8px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:bold}
 </style>
 </head>
 <body>
@@ -28,8 +29,9 @@ body{margin:0;font-family:Tajawal,Arial;background:#f1f5f9}
 <div class="header">
   <a href="بطاقة-فنية.pdf" class="download-btn">📥 حمّل</a>
   <div class="header-text">
-    من إعداد المترشح: <span>الطاهر خضار</span>
-    <div style="font-size:13px;color:#555;font-weight:normal;margin-top:4px">بطاقة فنية غير رسمية حول بلدية العقلة - ولاية تبسة<br>لأغراض التوعية والتعريف فقط</div>
+    <p class="name-label">من إعداد المترشح:</p>
+    <p class="name">الطاهر خضار</p>
+    <div class="sub">بطاقة فنية غير رسمية<br>لأغراض التوعية والتعريف فقط</div>
   </div>
   <img src="tahar.jpg" class="avatar">
 </div>
@@ -39,17 +41,17 @@ body{margin:0;font-family:Tajawal,Arial;background:#f1f5f9}
   <p>الوظائف الممنوعة من ممارسة السياسة</p>
 </div>
 
-<div class="flag-bar"><div class="green"></div><div class="white"></div><div class="red"></div></div>
+<div class="flag-bar"><div class="red"></div><div class="white"></div><div class="green"></div></div>
 
 <div class="card">
-  <div class="icon">🧹</div>
+  <div style="font-size:48px">🧹</div>
   <h2>الأعوان الشبيهون (أعوان الشبه)</h2>
   <p>في البلديات - ممنوعون من الترشح والحملة</p>
   <a href="aawan-shabihoun.html">ملف منفصل</a>
 </div>
 
 <div class="card">
-  <div class="icon">📢</div>
+  <div style="font-size:48px">📢</div>
   <h2>باقي الفئات الممنوعة</h2>
   <p>القضاة، الجيش، الأمن، الولاة...</p>
   <a href="wadaif-okhra.html">عرض القائمة</a>
