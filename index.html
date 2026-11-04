@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head><meta charset="UTF-8"><title>نسخ الأسماء</title>
-<style>body{font-family:system-ui;padding:20px;background:#f5f5f5} .row{background:#fff;padding:12px;margin:8px 0;border-radius:10px;display:flex;justify-content:space-between;align-items:center} button{background:#1a6aa8;color:#fff;border:none;padding:6px 12px;border-radius:8px;cursor:pointer}</style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الطاهر خضار - بلدية العقلة</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Tajawal',sans-serif}
+body{background:#eef6f8}
+.top-card{background:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee}
+.top-left{display:flex;align-items:center;gap:10px}
+.avatar{width:66px;height:66px;border-radius:50%;border:3px solid #1a6aa8;object-fit:cover}
+.top-text h2{font-size:14px;font-weight:800;color:#0a3d62}
+.top-text p{font-size:11px;color:#666}
+.btn-hamal{background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;border:none;padding:7px 16px;border-radius:20px;font-weight:700}
+.info{text-align:center;font-size:11px;color:#666;background:#fff;padding-bottom:8px}
+.banner{background:#1a6aa8;color:#fff;text-align:center;padding:16px;border-radius:0 0 20px 20px;margin-bottom:14px}
+.banner h2{font-size:19px;font-weight:800}
+.grid{max-width:1100px;margin:auto;padding:0 12px 30px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card{background:#fff;border-radius:14px;overflow:hidden;text-decoration:none;color:#000;box-shadow:0 3px 10px rgba(0,0,0,.05);border:1px solid #eee}
+.card img{width:100%;height:90px;object-fit:cover;display:block;background:#e8f5e9}
+.card .ic{width:100%;height:90px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;color:#0a5c36;font-weight:800;font-size:22px}
+.card h3{font-size:12px;padding:8px;text-align:center;color:#0a3d62;font-weight:700}
+</style>
 </head>
 <body>
-<h3>أسماء الصور - اضغط نسخ</h3>
-<div id="list"></div>
-<script>
-const files=["icon_shorta_nobeard.png","icon_jaych_nobeard.png","icon_woulat_nobeard.png","icon_aawan_nobeard.png","taalima.jpg","tahar.jpg"];
-const list=document.getElementById('list');
-files.forEach(f=>{
-  const div=document.createElement('div');div.className='row';
-  div.innerHTML=`<span>${f}</span><button onclick="navigator.clipboard.writeText('${f}');this.textContent='تم النسخ ✓'">نسخ</button>`;
-  list.appendChild(div);
-});
-</script>
+
+<div class="top-card">
+  <div class="top-left">
+    <img src="tahar.jpg" class="avatar">
+    <div class="top-text"><h2>من إعداد المترشح: الطاهر خضار</h2><p>بطاقة فنية غير رسمية</p></div>
+  </div>
+  <button class="btn-hamal">📥 حمّل</button>
+</div>
+<div class="info">لأغراض التوعية والتعريف فقط</div>
+<div class="banner"><h2>بلدية العقلة - ولاية تبسة</h2></div>
+
+<div class="grid">
+  <a class="card" href="aawan-shabihoun.html"><div class="ic">ع</div><h3>أعوان شبيهون</h3></a>
+  <a class="card" href="anawin-arabia.html"><div class="ic">ع</div><h3>عناوين عربية</h3></a>
+  <a class="card" href="hamla-intikhabia.html"><div class="ic">ح</div><h3>الحملة الانتخابية</h3></a>
+  <a class="card" href="jaych.html"><div class="ic">ج</div><h3>الجيش</h3></a>
+  <a class="card" href="qoudat.html"><div class="ic">ق</div><h3>القادة</h3></a>
+  <a class="card" href="shorta.html"><div class="ic">ش</div><h3>الشرطة</h3></a>
+  <a class="card" href="taalima-wizariya-72.html"><img src="taalima.jpg"><h3>تعليمة وزارية 72</h3></a>
+  <a class="card" href="woulat.html"><div class="ic">و</div><h3>الولاة</h3></a>
+  <a class="card" href="tahar.html"><img src="tahar.jpg"><h3>الطاهر خضار</h3></a>
+</div>
+
 </body>
 </html>
