@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الوظائف الممنوعة من ممارسة السياسة - بلدية العقلة</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a7ac1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="tahar.jpg">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
 body { background: #eef4f7; color: #222; }
@@ -17,21 +23,21 @@ body { background: #eef4f7; color: #222; }
 .card h3 { font-size: 15px; padding: 8px 5px 0; line-height: 1.4; }
 .card p { font-size: 12px; color: #666; padding: 4px; }
 .footer { text-align: center; padding: 15px; font-size: 13px; color: #777; }
+.install-btn { display: block; background: #25D366; color: #fff; text-align: center; margin: 10px; padding: 14px; border-radius: 12px; font-weight: bold; font-size: 17px; border: none; width: calc(100% - 20px); cursor: pointer; }
 @media (max-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
-
 <div class="header">
   <div class="header-text">من إعداد المترشح: الطاهر خضار<br>بطاقة فنية غير رسمية</div>
   <img src="tahar.jpg" alt="الطاهر خضار">
 </div>
-
 <div class="banner">بلدية العقلة - ولاية تبسة</div>
-
 <div style="text-align:center; padding:12px 10px 0; font-weight:bold;">
   الوظائف الممنوعة من ممارسة السياسة والحملة الانتخابية - القانون الجزائري
 </div>
+
+<button id="installBtn" class="install-btn" style="display:none;">📱 ثبت التطبيق في هاتفك - اضغط هنا</button>
 
 <div class="grid">
   <a class="card" href="hamla-intikhabia.html"><img src="hamla.jpeg"><h3>الحملة الانتخابية</h3><p>القواعد والممنوعات</p></a>
@@ -43,7 +49,29 @@ body { background: #eef4f7; color: #222; }
   <a class="card" href="anawin-arabia.html"><img src="anawin.jpeg"><h3>العناوين</h3><p>النصوص القانونية</p></a>
   <a class="card" href="taalima-wizariya-721.html"><img src="taalima.jpg"><h3>التعليمة الوزارية 721</h3><p>وضعية المترشح الموظف - عطلة تلقائية + حياد الإدارة</p></a>
 </div>
-
 <div class="footer">وثيقة غير رسمية للإعلام فقط - بلدية العقلة - تبسة</div>
+
+<script>
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+installBtn.addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') { installBtn.style.display = 'none'; }
+    deferredPrompt = null;
+  }
+});
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(()=>{});
+  });
+}
+</script>
 </body>
 </html>
