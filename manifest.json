@@ -1,0 +1,22 @@
+{
+  "name": "الوظائف الممنوعة من السياسة - بلدية العقلة",
+  "short_name": "العقلة - تبسة",
+  "description": "بطاقة فنية غير رسمية - التعليمة الوزارية 721 والوظائف الممنوعة من ممارسة السياسة",
+  "start_url": "/wadaif-mamnoua-min-siyasa/index.html",
+  "display": "standalone",
+  "background_color": "#1a7ac1",
+  "theme_color": "#1a7ac1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "tahar.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "tahar.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
